@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+/* проект открывать в отдельном окне */
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleform.css">
+    <link rel="icon" href="stuff/Icon.png">
+    <link rel="stylesheet" href="stylegrid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&amp;family=Jura:wght@600&amp;display=swap" rel="stylesheet">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <div>
+            <div id="popout">
+                <div class="popout_header">
+                    <a href="index.html" class="home" >Home</a>
+                    <a href="Form_page.html" class="form">Form</a>
+                </div>
+                <hr>
+                <div class="popout_body">
+                    <h3>Таблица oнлайн заявки:</h3>              
+                   <p><b>Форма онлайн заявки:</b></p>
+                    <p>В поле ваше сообщение введите ответы на вопросы. Они нужны для подготовки к обсуждению заказа</p>
+                    <p>Какая цель создания сайта?</p>
+                    <p>Каких измеряемых показателей вы хотите достичь с помощью сайта?</p>
+                    <p> Кто целевая аудитория?</p>
+                    <p> Кто ваши основные конкуренты?</p>
+                    <p>В чем ваше конкурентное преимущество?</p>
+                    <table>
+                        <thead class="unictable">
+                          <tr>
+                          <th style="font-size:12px;" scope="col">Имя</th>
+                          <th style="font-size:12px;" scope="col">Компания</th>
+                          <th style="font-size:12px;" scope="col">Номер</th>
+                          <th style="font-size:12px;" scope="col">Цель сайта</th>
+                          <th style="font-size:12px;" scope="col">Охват</th>
+                          <th style="font-size:12px;" scope="col">Целевая аудитория</th>
+                          <th style="font-size:12px;" scope="col">Основные конкуренты</th>
+                          <th style="font-size:12px;" scope="col">Конк.преимущ.</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td style="font-size:12px;">Тимофей</td>
+                            <td style="font-size:12px;">ТимофейInd.</td>
+                            <td style="font-size:12px;">900</td>
+                            <td style="font-size:12px;">Оффлайн Банк</td>
+                            <td style="font-size:12px;">Вся страна</td>
+                            <td style="font-size:12px;">Граждане РФ(14-50 лет)</td>
+                            <td style="font-size:12px;">СберБанк, Тинькофф</td>
+                            <td style="font-size:12px;">Я Тимофей</td>
+                          </tr>
+                          <tr>
+                            <td style="font-size:12px;">НеТимофей</td>
+                            <td style="font-size:12px;">НеТимофейInd.</td>
+                            <td style="font-size:12px;">Не900</td>
+                            <td style="font-size:12px;">НеОффлайн НеБанк</td>
+                            <td style="font-size:12px;">НеСтрана</td>
+                            <td style="font-size:12px;">НеГражданеРФ(14-50 лет)</td>
+                            <td style="font-size:12px;">НеСбер</td>
+                            <td style="font-size:12px;">НеТимофей</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </table>
+                    <hr>
+                    <div class="forms">
+                    <form style="border: 2px solid;">
+                        <h1>Онлайн Форма Заявки</h1>
+                        <hr>
+                        <input type="text" name="nameuser" required=""><label for="nameuser" class="label"><b>- ФИО</b></label><br>
+                        <input type="text" name="company" required=""><label for="company" class="label"><b>- Название компании</b></label><br>
+                        <input type="text" name="phone" required=""><label for="phone" class="label"><b>- Номер Телефона</b></label><br>
+                        <input type="text" name="goals" required=""><label for="goals"><b>- Цели проекта</b></label><br>
+                        <input type="number" name="users" min="1" required=""><label for="users"><b>- Желаемый охват пользователей</b></label><br>
+                        <input type="text" name="auditory" required=""><label for="auditory"><b>- Целевая Аудитория</b></label><br>
+                        <input type="text" name="concurent" required=""><label for="concurent"><b>- Основные Конкуренты</b></label><br>
+                        <input type="text" name="concurentprem" required=""><label for="concurentprem"><b>- Конкурентное Преимущество</b></label><br>
+                        <input rows="10" cols="50" placeholder=" Ваш Комментарий " class="input" />
+                        <input type="submit"  value="Отправить Форму">
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
